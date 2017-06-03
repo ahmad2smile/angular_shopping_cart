@@ -1,0 +1,31 @@
+.productContainer{
+	height: 100px;
+	display: flex;
+	border-bottom: 1px gray solid;
+}
+
+.productContainer > div{
+	margin: 5px 10px;
+}
+
+.ImageContainer{
+	width: 80px;
+	height: 80px;
+	display: flex;
+}
+img{
+	width: 80px;
+	align-self: center;
+}
+
+.detailsContainer{
+	flex-grow: 2;
+}
+
+.priceContainer{
+	color: #EA524F;
+}
+
+.crossContainer{
+	width: 1rem;
+}

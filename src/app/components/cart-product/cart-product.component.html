@@ -1,0 +1,13 @@
+<div class="productContainer container">
+	<div class="ImgContainer">
+		<img [src]="cartProduct.image_url" alt="">
+	</div>
+	<div class="detailsContainer">
+		<div class="name">{{cartProduct.title}}</div>
+		<div class="toallItems">1 item ({{cartProduct.price}} each)</div>
+	</div>
+	<div class="priceContainer">{{cartProduct.price}}</div>
+	<div class="crossContainer">
+		<ng-content></ng-content>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<nav [style.backgroundColor]="navBgColor" class="navbar navbar-toggleable-md navbar-light">
+    <div class="container">
+        <a [routerLink]="['/']" class="navbar-brand">
+			<div class="brandLogo">{{brandLogo}}</div>
+		</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['cart']">
+					<div class="cart-container">
+						<ng-content></ng-content>
+						<span *ngIf="totallProducts" class="notification">{{totallProducts}}</span>
+					</div>
+				</a>
+            </li>
+        </ul>
+    </div>
+</nav>

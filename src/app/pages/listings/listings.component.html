@@ -1,0 +1,21 @@
+<app-navbar
+	[brandLogo]="'FYNDIQ'"
+	[totallProducts]="totallProducts">
+	<div class="basketContainer">
+		<app-basket [basketColor]="'#EA524F'"></app-basket>
+	</div>
+</app-navbar>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div *ngFor="let product of products" class="col">
+					<app-product-card
+						[product]="product"
+						(click)="productClickHandler(product)"
+						></app-product-card>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

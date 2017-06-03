@@ -1,0 +1,22 @@
+<div class="card-container">
+	<div class="product-card">
+		<div class="row">
+			<div class="col card-child-container">
+				<div class="productImageContainer">
+					<img [src]="product.image_url" alt="Product Image">
+				</div>
+				<h5>{{product.title}}</h5>
+				<div class="priceBtns">
+					<div class="currentPrice">{{product.price}}</div>
+					<s class="oldPrice">{{product.old_price}}</s>
+					<div class="addToCartBtn btn btn-success">
+						<div class="basketContainer">
+							<app-basket [basketColor]="'#fff'"></app-basket>
+						</div>
+						<span>Buy</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

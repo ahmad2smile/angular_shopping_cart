@@ -1,0 +1,39 @@
+
+.navbar{
+	position: relative;
+}
+
+.container{
+	position: static;
+}
+
+.navbar-nav{
+	position: absolute;
+	right: 9%;
+	top: 7px;
+}
+
+.brandLogo{
+	background-color: #EA524F;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 0 5px;
+}
+
+.cart-container{
+	position: relative;
+}
+
+.notification{
+	background-color: #5cb85c;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0 5px;
+	margin-top: -6px;
+	margin-right: -6px;
+	color: #fff;
+}

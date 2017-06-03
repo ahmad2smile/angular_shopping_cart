@@ -1,0 +1,74 @@
+{
+    "products": [
+        {
+            "title": "Revolutionary Mini-UFO (4 pack)",
+            "image_url": "https://cdn.fyndiq.se/product/fa/87/d7/d871294e94d095743c355b98b827b4a9a0/original.png",
+            "old_price": "99 kr",
+            "price": "69 kr",
+            "price_amount": 69.00
+        },
+        {
+            "title": "Amazing Stylish Beach Ball (deluxe version)",
+            "image_url": "https://cdn.fyndiq.se/product/bc/de/64/af09d2056d5012fc5af12be38f738f4580/original.png",
+            "old_price": "60 kr",
+            "price": "42 kr",
+            "price_amount": 42.00
+        },
+        {
+            "title": "Very old door knob",
+            "image_url": "https://cdn.fyndiq.se/product/f7/81/49/a0ebc59d095faa54424bdb76a6deee96b1/original.png",
+            "old_price": "12099 kr",
+            "price": "9876 kr",
+            "price_amount": 9876.00
+        },
+        {
+            "title": "Nose termometer",
+            "image_url": "https://cdn.fyndiq.se/product/ae/1b/9a/917b427cd9eeb2b5f06f4ad7dae0c250ad/original.png",
+            "old_price": "189 kr",
+            "price": "49 kr",
+            "price_amount": 49.00
+        },
+        {
+            "title": "Rain & Sauna Suit",
+            "image_url": "https://cdn.fyndiq.se/product/52/ad/4a/11e89301e689b4ccc487306385a3b9b612/original.png",
+            "old_price": "249 kr",
+            "price": "149 kr",
+            "price_amount": 149.00
+        },
+        {
+            "title": "Sticky Balaclava",
+            "image_url": "https://cdn.fyndiq.se/product/04/db/f7/330f82fa301ff261952e6469958d6e90e9/original.png",
+            "old_price": "29 kr",
+            "price": "19 kr",
+            "price_amount": 19.00
+        },
+        {
+            "title": "A pile of plastic macaroni",
+            "image_url": "https://cdn.fyndiq.se/product/f8/aa/5a/6dfba1aaaf1fd51ae439751d3aeff6708a/original.png",
+            "old_price": "65 kr",
+            "price": "30 kr",
+            "price_amount": 30.00
+        },
+        {
+            "title": "Integrity disruptor",
+            "image_url": "https://cdn.fyndiq.se/product/a9/e2/95/0ba93fbf8fb1f6d8350df691de5c895e9d/original.png",
+            "old_price": "299 kr",
+            "price": "199 kr",
+            "price_amount": 199.00
+        },
+        {
+            "title": "The best chair ever",
+            "image_url": "https://cdn.fyndiq.se/product/a5/10/6a/80e26b4a4659eefe8f290fce69c55df9f0/original.png",
+            "old_price": "99 kr",
+            "price": "89 kr",
+            "price_amount": 89.00
+        },
+        {
+            "title": "Thor's garage hammer - emits lightning on iPhones",
+            "image_url": "https://cdn.fyndiq.se/product/c5/ad/a5/b3a16c6b5b2eabfe71319f85f186a8f7ee/original.png",
+            "old_price": "1000000 kr",
+            "price": "1 kr",
+            "price_amount": 1.00
+        }
+    ]
+}

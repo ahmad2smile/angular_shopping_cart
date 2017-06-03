@@ -1,0 +1,18 @@
+<app-navbar
+	[navBgColor]="'#EA524F'"
+	[brandLogo]="'Shopping cart'"
+	[totallProducts]="totallProducts">
+	<div style="width:1.2rem; margin-top:70%;" class="crossContainer">
+		<app-cross></app-cross>
+	</div>
+</app-navbar>
+<div *ngFor="let cartProduct of cartProducts" class="productList container">
+	<app-cart-product [cartProduct]="cartProduct">
+		<app-cross [crossColor]="'#EA524F'"></app-cross>
+	</app-cart-product>
+</div>
+<app-cart-product [cartProduct]="shippingInfo"></app-cart-product>
+<div class="toPay container">
+	<div>To Pay:</div>
+	<div class="totallCheckOut">815 kr</div>
+</div>

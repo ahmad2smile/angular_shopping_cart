@@ -1,0 +1,53 @@
+.card-child-container, .card-container{
+	width: 280px;
+	height: 385px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.productImageContainer{
+	width: 270px;
+	height: 270px;
+	display: flex;
+}
+img{
+	width: 270px;
+	align-self: center;
+}
+
+.priceBtns{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+}
+
+.oldPrice{
+	flex-grow: 2;
+	color: #666;
+}
+
+.currentPrice{
+	font-weight: bolder;
+	color: #EA524F;
+}
+
+.currentPrice, .oldPrice{
+	margin: 0px 5px;
+	font-size: 1.2rem;
+}
+
+.btn{
+	padding: 3px 6px 6px 40px;
+	position: relative;
+	font-weight: 400;
+}
+
+.basketContainer{
+	width: 1.5rem;
+	display: inline-block;
+	position: absolute;
+	right: 40px;
+	top: 0;
+}
