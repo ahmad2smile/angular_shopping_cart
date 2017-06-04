@@ -62,7 +62,7 @@ export class CartService{
 												 .reduce((acc, curr)=> acc + curr);
 			return _totallAmount + this.shippingFee;
 		}else if (this.cartProducts.length === 1) {
-		    return this.cartProducts[0].price_amount;
+		    return this.cartProducts[0].price_amount + this.shippingFee;
 		}else if(this.cartProducts.length === 0){
 			return 0;
 		}
