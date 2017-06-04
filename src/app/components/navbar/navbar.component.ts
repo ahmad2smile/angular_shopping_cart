@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
 	@Input() totallProducts: number;
 	@Input() brandLogo: string;
 	@Input() navBgColor: string = "#fff";
+	@Input() linkItemRoute: string;
 
   ngOnInit() {
   }

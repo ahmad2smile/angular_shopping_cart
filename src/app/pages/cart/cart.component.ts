@@ -28,6 +28,7 @@ export class CartComponent implements OnInit {
 
 	removeProductHandler(i){
 		this._cartService.remove(i);
+		this.cartProducts = this._cartService.getCart();
 	}
 
 }
