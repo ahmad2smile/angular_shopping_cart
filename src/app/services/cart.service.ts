@@ -9,6 +9,7 @@ export class CartService{
 	}
 
 	private cartProducts: Array<Product> = [];
+	private shippingFee: number = 49;
 
 	add(product: Product): void{
 		let cartHasProduct = this.cartProducts.some((p)=>
@@ -56,7 +57,15 @@ export class CartService{
 	}
 
 	totallAmount(): number{
-		return 0;
+		if(this.cartProducts.length > 1){
+			let _totallAmount = this.cartProducts.map((p)=> p.price_amount)
+												 .reduce((acc, curr)=> acc + curr);
+			return _totallAmount + this.shippingFee;
+		}else if (this.cartProducts.length === 1) {
+		    return this.cartProducts[0].price_amount;
+		}else if(this.cartProducts.length === 0){
+			return 0;
+		}
 	}
 
 }

@@ -7,13 +7,21 @@
 		<app-cross></app-cross>
 	</div>
 </app-navbar>
-<div *ngFor="let cartProduct of cartProducts; let i = index;" class="productList container">
-	<app-cart-product [cartProduct]="cartProduct">
-		<app-cross (click)="removeProductHandler(i)" [crossColor]="'#EA524F'"></app-cross>
-	</app-cart-product>
-</div>
-<app-cart-product [cartProduct]="shippingInfo"></app-cart-product>
-<div class="toPay container">
-	<div>To Pay:</div>
-	<div class="totallCheckOut">815 kr</div>
+<div class="productList container">
+	<div *ngFor="let cartProduct of cartProducts; let i = index;">
+		<app-cart-product [cartProduct]="cartProduct">
+			<app-cross (click)="removeProductHandler(i)" [crossColor]="'#EA524F'"></app-cross>
+		</app-cart-product>
+	</div>
+	<app-cart-product [cartProduct]="shippingInfo"></app-cart-product>
+	<div class="toPay">
+		<div>To Pay:</div>
+		<div class="totallCheckOut">{{_totallAmount}} kr</div>
+	</div>
+	<div class="container checkoutBtnContainer">
+		<button
+			[disabled]="!_totallAmount"
+			(click)="checkoutHandler()"
+			class="checkoutBtn btn btn-success">Checkout</button>
+	</div>
 </div>

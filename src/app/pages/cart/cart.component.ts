@@ -15,20 +15,30 @@ export class CartComponent implements OnInit {
     }
 
     cartProducts: Array<Product> = [];
+	_totallAmount: number = 0;
 	shippingInfo = {
-    "title": "Shipping",
-    "image_url": "",
-    "price": "49 kr",
-    "price_amount": 49
-  }
+	    "title": "Shipping",
+	    "image_url": "",
+	    "price": "49 kr",
+	    "price_amount": 49
+	};
 
     ngOnInit() {
-  	  this.cartProducts = this._cartService.getCart();
+  	  this.updateCartComponent();
     }
 
 	removeProductHandler(i){
 		this._cartService.remove(i);
+		this.updateCartComponent();
+	}
+
+	updateCartComponent(): void{
 		this.cartProducts = this._cartService.getCart();
+		this._totallAmount = this._cartService.totallAmount();
+	}
+
+	checkoutHandler(){
+		console.log("Someday submit the Order!");
 	}
 
 }

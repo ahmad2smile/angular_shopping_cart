@@ -14,3 +14,14 @@
 .totallCheckOut{
 	padding-right: 4%;
 }
+
+.checkoutBtnContainer{
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+.checkoutBtn{
+	width: 70%;
+	padding: 20px 0 20px 0;
+	cursor: pointer;
+}
