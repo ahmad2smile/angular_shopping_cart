@@ -6,9 +6,9 @@
 		<app-cross></app-cross>
 	</div>
 </app-navbar>
-<div *ngFor="let cartProduct of cartProducts" class="productList container">
+<div *ngFor="let cartProduct of cartProducts; let i = index;" class="productList container">
 	<app-cart-product [cartProduct]="cartProduct">
-		<app-cross [crossColor]="'#EA524F'"></app-cross>
+		<app-cross (click)="removeProductHandler(i)" [crossColor]="'#EA524F'"></app-cross>
 	</app-cart-product>
 </div>
 <app-cart-product [cartProduct]="shippingInfo"></app-cart-product>

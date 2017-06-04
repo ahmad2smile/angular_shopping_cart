@@ -1,4 +1,4 @@
-<div class="productContainer container">
+<div *ngIf="cartProduct" class="productContainer container">
 	<div class="ImgContainer">
 		<img [src]="cartProduct.image_url" alt="">
 	</div>
